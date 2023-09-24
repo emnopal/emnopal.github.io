@@ -106,14 +106,13 @@ var THEMETAGS = THEMETAGS || {};
 		},
 		general: function () {
 			// Mouse Move Parallax Element
-      var parallaxElement = $(".parallax-element")
-      console.log(parallaxElement)
-      if (parallaxElement) {
-        var $scene = parallaxElement.parallax({
-          scalarX: 100,
-          scalarY: 100,
-        });
-      }
+			var parallaxElement = $(".parallax-element")
+			if (parallaxElement) {
+				var $scene = parallaxElement.parallax({
+					scalarX: 100,
+					scalarY: 100,
+				});
+			}
 		},
 	};
 

@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+	<!-- head -->
 	<head>
+
+		<!-- meta -->
 		<meta charset="utf-8" />
-		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+		<link rel="icon" href="./favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="theme-color" content="#000000" />
 		<meta name="description" content="Web site created using create-react-app" />
-		<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-		<!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-		<!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+		<link rel="apple-touch-icon" href="./assets/img/logo/logo-big-white-192.png" />
+		<link rel="manifest" href="./manifest.json" />
 		<title>Muhammad Naufal Portfolio</title>
+		<!-- end meta -->
 
+		<!-- lib -->
 		<!-- jquery -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -36,14 +28,14 @@
 		</script>
 
 		<!-- aos -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 
 		<!-- swiper -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.0/swiper-bundle.min.js"></script>
 
 		<!-- parallax -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax.js/1.5.0/parallax.js"></script>
 
 		<!-- cdn -->
 		<script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -54,21 +46,23 @@
 			rel="stylesheet" />
 
 		<!-- fontawesome -->
+		<script src="https://site-assets.fontawesome.com/releases/v6.0.0/js/all.js"></script>
 		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" />
-		<script src="https://site-assets.fontawesome.com/releases/v6.0.0/js/all.js" data-auto-add-css="false"
-			data-auto-replace-svg="false"></script>
 
 		<!-- emojione -->
-		<script src="https://cdn.jsdelivr.net/emojione/2.2.7/lib/js/emojione.min.js" type="text/javascript" async=""
-			defer=""></script>
+		<script src="https://cdn.jsdelivr.net/emojione/2.2.7/lib/js/emojione.min.js"></script>
 
 		<!-- sweetalert -->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 		<!--build:css-->
-		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/custom-bootstrap.css" />
+		<link rel="stylesheet" href="./assets/css/custom-fontawesome.css" />
 		<link rel="stylesheet" href="./assets/css/custom.css" />
+		<!-- end lib -->
+
 	</head>
+	<!-- end head -->
 
 	<body data-aos-easing="ease-in-out" data-aos-duration="500" data-aos-delay="0">
 		<!--preloader start-->
@@ -151,6 +145,12 @@
 								<i class="fa-brands fa-github fa-fw ms-1"></i>
 							</a>
 						</div>
+						<div class="action-btns text-end me-5 me-lg-0 d-none d-xl-block d-md-none d-lg-none">
+							<a href="https://www.linkedin.com/in/muhammad-naufal-9745b2175/" style="font-size: 23px"
+								target="_blank" rel="noreferrer">
+								<i class="fa-brands fa-linkedin fa-fw ms-1"></i>
+							</a>
+						</div>
 						<div style="padding-right: 3px"></div>
 						<div class="action-btns text-end me-5 me-lg-0 d-none d-xl-block d-md-none d-lg-none">
 							<a href="mailto:mnaufal0999@gmail.com" style="font-size: 23px"
@@ -184,7 +184,7 @@
 									</p>
 								</div>
 							</div>
-							<div class="col-lg-4 col-md-8 col-12">
+							<!-- <div class="col-lg-4 col-md-8 col-12">
 								<div class="hero-img-wrap position-relative app-screen-bg" data-aos="fade-up"
 									data-aos-delay="200">
 									<ul class="position-absolute animate-element parallax-element circle-shape-list"
@@ -274,7 +274,7 @@
 												transform-style: preserve-3d;
 												backface-visibility: hidden;
 											">
-											<img src="./assets/main/img/shape/circle-1.svg" alt="shape"
+											<img src="./assets/img/shape/circle-1.svg" alt="shape"
 												class="circle-shape-item type-5 hero-1" />
 										</li>
 									</ul>
@@ -283,7 +283,7 @@
 											class="img-fluid position-relative z-5" style="width: 500px" />
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</section>
@@ -300,21 +300,16 @@
 							</div>
 						</div>
 						<div class="row g-3 mt-3">
-							<div class="col-12 text-left">
-								<h5>
-									A strong technical foundation has been built through over two years of hands-on experience in Fullstack Development and Data Engineering, particularly in Odoo, PostgreSQL, Golang, and Laravel. Effective collaboration with both the QA and Functional teams, allowing for the delivery of features and improvements, is a notable skill, as well as experience working with international teams, which highlights adaptability and a global perspective.
-									<br/><br/>
-									My career aspirations revolve around programming, specifically in Backend Development, Fullstack Development, and Data Engineering. Enthusiasm exists for using skills and expertise to contribute to programming projects and continually improving capabilities in these areas.
-								</h5>
-							</div>
+							<div class="col-12 text-left" id="summary-content"/>
 						</div>
 					</div>
 				</section>
-				<!-- end upper lower section -->s
+				<!-- end upper lower section -->
 			</div>
 			<!--main content wrapper end -->
 		</div>
 		<script src="./assets/js/app.js"></script>
+		<script src="./assets/js/load.js"></script>
 	</body>
 
 </html>
