@@ -10,6 +10,43 @@
 	color: var(--bs-primary);
 }
 
+.navbar-light.sticky-header.affix .fa-fw, .navbar-dark.sticky-header.affix .fa-fw {
+    color: #000000;
+}
+
+.navbar-light.sticky-header .fa-fw, .navbar-dark.sticky-header .fa-fw {
+    color: #ffffff;
+}
+
+.collapse.navbar-collapse.justify-content-center ul.nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+    transform-origin: left
+}
+
+.affix .collapse.navbar-collapse.justify-content-center ul.nav li a::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: width 0.3s ease;
+    transform-origin: left
+}
+
+.collapse.navbar-collapse.justify-content-center ul.nav li a:hover::before,
+.affix .collapse.navbar-collapse.justify-content-center ul.nav li a:hover::before {
+    width: 100%;
+}
+
 :root {
 	color-scheme: light only !important;
 }
