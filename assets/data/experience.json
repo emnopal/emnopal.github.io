@@ -1,0 +1,98 @@
+[
+    {
+        "Title": "Software Engineer",
+        "ExperienceType": "Full-Time",
+        "CompanyName": "PT. BMG (Boston Makmur Gemilang) Indonesia",
+        "CompanyWebsiteName": "https://bmgindonesia.com/",
+        "CompanyLogo": "https://bmgindonesia.com/wp-content/uploads/2023/03/logo-bmg.webp",
+        "CompanyLocation": "Kebon Jeruk, West Jakarta, Indonesia",
+        "Date": {
+            "Start": "2022-02-04",
+            "End": null
+        },
+        "Description": "&#x2022 Build scalable and maintainable applications and services (Odoo and some Backend services)<br/>&#x2022 Maintain and Optimizing existing applications and services (Odoo and some Backend Services)<br/>&#x2022 Maintain and Optimizing SQL queries for applications and services (Odoo Dashboard and Report also some Backend Services as well for some dashboarding apps such as Metabase and PowerBI)<br/>&#x2022 Implement Docker as the container for deployment<br/>&#x2022 Implement a Cloud Platform for deployment<br/>&#x2022 Collaborate with QA and Functional team to deliver features and improvements<br/>&#x2022 Collaborate with the Overseas team",
+        "Skills": "Data Visualization,Google BigQuery,Docker,Azure,Odoo,Python,Data Analysis,Data Engineering,PostgreSQL,Flask,Django",
+        "Links": []
+    },
+    {
+        "Title": "Freelance Software Developer, Designer and Teacher",
+        "ExperienceType": "Freelance",
+        "CompanyName": "Freelance",
+        "CompanyWebsiteName": null,
+        "CompanyLogo": null,
+        "CompanyLocation": "Everywhere",
+        "Date": {
+            "Start": "2018-05-01",
+            "End": null
+        },
+        "Description": "Teacher:<br/>&#x2022 Teaching various subjects, such as Physics, Math and Programming<br/>Software Developer:<br/>&#x2022 Developing website<br/>&#x2022 Build script for automation<br/>&#x2022 Build a small library<br/>&#x2022 Do an open-source project and contribution<br/>Designer:<br/>&#x2022 Create thumbnail, logo, pamphlet, banner and standing banner using Canva, Adobe Photoshop and Adobe Illustrator",
+        "Skills": null,
+        "Links": []
+    },
+    {
+        "Title": "Editorial Staff",
+        "ExperienceType": "Part-Time",
+        "CompanyName": "Al-Fiziya : Journal of Material Science, Geophysics, Instrumentation, and Theoritical Physics",
+        "CompanyWebsiteName": "https://journal.uinjkt.ac.id/index.php/al-fiziya",
+        "CompanyLogo": null,
+        "CompanyLocation": "Ciputat Timur, South Tangerang",
+        "Date": {
+            "Start": "2019-01-01",
+            "End": "2021-12-01"
+        },
+        "Description": "Before the Professor does a scientific review regarding the paper and journal, I'm responsible for:<br/>&#x2022 Editing and reviewing journals regarding the layout<br/>&#x2022 Fixing grammatical rules (in Indonesia and English)<br/>&#x2022 Publishing either digital or print journals.<br/>&#x2022 Write website content and maintain it",
+        "Skills": null,
+        "Links": []
+    },
+    {
+        "Title": "Laboratory Assistant",
+        "ExperienceType": "Part-Time",
+        "CompanyName": "UIN Syarif Hidayatullah Jakarta",
+        "CompanyWebsiteName": "https://uinjkt.ac.id",
+        "CompanyLogo": "https://www.uinjkt.ac.id/wp-content/uploads/2022/12/uinjktblu-logo.webp",
+        "CompanyLocation": "Ciputat Timur, South Tangerang",
+        "Date": {
+            "Start": "2018-07-01",
+            "End": "2021-12-01"
+        },
+        "Description": "Leading and Teaching the student how to operate and achieve the result as cited in the practitioner module for several courses such as:<br/>&#x2022 Basic Physics for University <br/>&#x2022 Electronics <br/>&#x2022 Advanced Electronics <br/>&#x2022 Computational Physics using Python <br/>&#x2022 Instrumentation Programming using Python and C++ <br/>&#x2022 Advanced Physics for Undergraduate",
+        "Skills": "C++,Python",
+        "Links": []
+    },
+    {
+        "Title": "Machine Learning Intern",
+        "ExperienceType": "Internship",
+        "CompanyName": "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
+        "CompanyWebsiteName": "https://grow.google/intl/id_id/bangkit/",
+        "CompanyLogo": "https://lh3.googleusercontent.com/NtORZkpsdeRJDkdA4DdUYwMUdpL1pNNO1HOVby1F6Qst1jwx6yVRkDmHJeaOtWzFLQWMPZxU_XFurb3646KdxYX8n7cYNoJeC0kpiVOhPWhayI5Z6e0X=w600",
+        "CompanyLocation": "Online",
+        "Date": {
+            "Start": "2021-02-01",
+            "End": "2021-07-01"
+        },
+        "Description": "&#x2022Build Machine Learning models with Scikit-Learn and TensorFlow<br/>&#x2022 Maintain and Improve existing Machine Learning models<br/>&#x2022 Do a deployment machine learning model on the web with tf-js and the mobile with tf-lite<br/>&#x2022 Implement Docker for Machine Learning Deployment<br/>&#x2022 Build an API to communicate the Machine Learning model with external apps",
+        "Skills": "Data Visualization,Docker Products,Big Data,Google Cloud Platform (GCP),Python (Programming Language),Data Analysis,Data Engineering,Machine Learning,TensorFlow",
+        "Links": [
+            "https://www.linkedin.com/in/muhammad-naufal-9745b2175/details/experience/1755024256/multiple-media-viewer?profileId=ACoAACmOmegBrS4CDO23B3CRqyxB-qr1TzPWVmM&treasuryMediaId=1635511522040&type=DOCUMENT&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BWsyE9CLkS5KWoEh9een8qg%3D%3D",
+            "https://www.linkedin.com/in/muhammad-naufal-9745b2175/details/experience/1755024256/multiple-media-viewer?profileId=ACoAACmOmegBrS4CDO23B3CRqyxB-qr1TzPWVmM&treasuryMediaId=1635511521140&type=DOCUMENT&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BEgs8ZqGPQXmSSyvEFLZ6UA%3D%3D",
+            "https://github.com/faniabdullah/bangkit-final-project"
+        ]
+    },
+    {
+        "Title": "Graphic Designer",
+        "ExperienceType": "Part-Time",
+        "CompanyName": "UIN Syarif Hidayatullah Jakarta (Himpunan Mahasiswa Fisika)",
+        "CompanyWebsiteName": "https://uinjkt.ac.id",
+        "CompanyLogo": "https://www.uinjkt.ac.id/wp-content/uploads/2022/12/uinjktblu-logo.webp",
+        "CompanyLocation": "Ciputat Timur, South Tangerang",
+        "Date": {
+            "Start": "2018-01-01",
+            "End": "2020-10-01"
+        },
+        "Description": "My role in this organization was a Creative Team under the Department of Information and Communication (in 2020, I was head of the HIMAFI Department of Information and Communication). I was responsible for some job desks, which majority is designers, so my job desk was:<br/>&#x2022 Design some content for HIMAFI social media<br/>&#x2022 Design banners, flyers, posters, brochures and billboards for HIMAFI organization activity<br/>&#x2022 Design and Maintain HIMAFI Website",
+        "Skills": "Photoshop,Illustrator",
+        "Links": [
+            "https://www.instagram.com/himafi.uinjkt/"
+        ]
+    }
+]
