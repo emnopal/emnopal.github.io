@@ -70,7 +70,9 @@ function monthDiff(dateFrom, dateTo) {
 					<h3>${ele.Title}</h3>
 					<h6>${ele.CompanyName} &#x2022 ${ele.ExperienceType} </h6>
 					<h6>${parseDateStartString} - ${parseDateEndString} (${countExperience})</h6>
-					<span>${ele.Description}</span>
+					<div style="padding-top: 10px;">
+						<span>${ele.Description}</span>
+					</div>
 					<div style="padding-top: 15px; border-bottom: 3px solid black"/></div>
 				</div>
 			`
