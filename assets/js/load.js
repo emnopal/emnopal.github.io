@@ -91,6 +91,61 @@ async function renderExperience() {
 		const json = await response.json();
 
 		let data = "";
+		json.forEach((ele, num) => {
+			let parseDateStart = new Date(ele.Date.Start);
+			let parseMonthStart = parseDateStart.getMonthNameShort("en");
+			let parseYearStart = parseDateStart.getFullYear();
+			let parseDateStartString = `${parseMonthStart} ${parseYearStart}`;
+
+			let parseDateEnd = ele.Date.End
+				? new Date(ele.Date.End)
+				: new Date();
+			let parseMonthEnd = parseDateEnd.getMonthNameShort("en");
+			let parseYearEnd = parseDateEnd.getFullYear();
+			let parseDateEndString = ele.Date.End
+				? `${parseMonthEnd} ${parseYearEnd}`
+				: "Present";
+
+			let countExperience = monthDiff(parseDateStart, parseDateEnd);
+
+			let borderBottomClass = num < 2
+				? "padding-bottom: 15px;"
+				: "padding-bottom: 15px; padding-top: 35px;"
+
+			data += `
+                <div class="column col-12 text-left" style="${borderBottomClass}">
+                    <h3>${ele.Title}</h3>
+                    <h6>${ele.CompanyName} &#x2022 ${ele.ExperienceType} </h6>
+                    <h6>${parseDateStartString} - ${parseDateEndString} (${countExperience})</h6>
+                    <div style="padding-top: 10px;">
+                        <span>${ele.Description}</span>
+                    </div>
+                </div>
+            `;
+		});
+
+		let summary = document.getElementById("experience-content");
+		summary.innerHTML = `
+            <div class="row">
+                ${data}
+            </div>
+        `;
+	} catch (error) {
+		console.error("An error occurred:", error);
+	}
+	setTimeout(renderExperience, 5000);
+}
+
+async function renderEducation() {
+	try {
+		const response = await fetch("./assets/data/education.json");
+		if (!response.ok) {
+			throw new Error(`Failed to fetch data: ${response.status}`);
+		}
+
+		const json = await response.json();
+
+		let data = "";
 		json.forEach((ele) => {
 			let parseDateStart = new Date(ele.Date.Start);
 			let parseMonthStart = parseDateStart.getMonthNameShort("en");
@@ -108,41 +163,73 @@ async function renderExperience() {
 
 			let countExperience = monthDiff(parseDateStart, parseDateEnd);
 
+			let isUniv
+			if (ele.Thesis && ele.GPA) {
+				isUniv = `
+					<div style="padding-top: 10px;">
+						<h6>Thesis: ${ele.Thesis}</h6>
+						<h6>GPA: ${ele.GPA}</h6>
+                    </div>
+				`
+			}
+
+			let isActivity
+			if (ele.Activity) {
+				ele.Activity.forEach((acEle) => {
+					let parseDateStartActivity = new Date(acEle.Organization.Date.Start);
+					let parseMonthStartActivity = parseDateStartActivity.getMonthNameShort("en");
+					let parseYearStarActivity = parseDateStartActivity.getFullYear();
+					let parseDateStartActivityString = `${parseMonthStartActivity} ${parseYearStarActivity}`;
+
+					let parseDateEndActivity = acEle.Organization.Date.End
+						? new Date(acEle.Organization.Date.End)
+						: new Date();
+					let parseMonthEndActivity = parseDateEndActivity.getMonthNameShort("en");
+					let parseYearEndActivity = parseDateEndActivity.getFullYear();
+					let parseDateEndActivityString = acEle.Organization.Date.End
+						? `${parseMonthEndActivity} ${parseYearEndActivity}`
+						: "Present";
+
+					let countExperienceActivity = monthDiff(parseDateStartActivity, parseDateEndActivity);
+					isActivity = `
+						<div style="padding-top: 10px;">
+							<h6>Organization:</h6>
+							<span>${acEle.Organization.Name}</span><br/>
+							<span>${parseDateStartActivityString} - ${parseDateEndActivityString} (${countExperienceActivity})</span><br/>
+							<span>Position: ${acEle.Organization.Position}</span>
+						</div>
+					`
+				})
+			}
+
 			data += `
-                <div class="column col-12 text-left" style="padding-bottom: 35px">
-                    <h3>${ele.Title}</h3>
-                    <h6>${ele.CompanyName} &#x2022 ${ele.ExperienceType} </h6>
+                <div>
+                    <h3>${ele.Major}</h3>
+                    <h6>${ele.School} &#x2022 ${ele.Degree} of ${ele.Major} </h6>
                     <h6>${parseDateStartString} - ${parseDateEndString} (${countExperience})</h6>
                     <div style="padding-top: 10px;">
                         <span>${ele.Description}</span>
                     </div>
-                    <div style="padding-top: 15px; border-bottom: 3px solid black"/></div>
+					${isUniv}
+					${isActivity}
                 </div>
             `;
 		});
 
-		let summary = document.getElementById("experience-content");
-		summary.innerHTML = `
-            <div class="row">
-                ${data}
-            </div>
-        `;
+		let summary = document.getElementById("education-content");
+		summary.innerHTML = `${data}`;
 	} catch (error) {
 		console.error("An error occurred:", error);
 	}
+	setTimeout(renderEducation, 5000);
 }
 
 // render to html
 (async function () {
 	"use strict"; //preloader
 
-	// make sure experience date start and end always up to date
-	async function updateExperience() {
-		await renderExperience();
-		setTimeout(updateExperience, 5000);
-	}
-
 	renderSummary();
-	updateExperience();
+	renderExperience();
+	renderEducation();
 
 })();

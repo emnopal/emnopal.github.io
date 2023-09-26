@@ -1,0 +1,26 @@
+[
+	{
+		"School": "Syarif Hidayatullah Jakarta State Islamic Universities",
+		"Degree": "Bachelor",
+		"Major": "Physics",
+		"Date": {
+			"Start": "2017-07-01",
+			"End": "2021-11-01"
+		},
+		"Activity": [
+			{
+				"Organization": {
+					"Name": "HIMAFI (Himpunan Mahasiswa Fisika) UIN Jakarta",
+					"Position": "Head of Department Communication and Information",
+					"Date": {
+						"Start": "2018-01-01",
+						"End": "2020-10-01"
+					}
+				}
+			}
+		],
+		"Description": "Bachelor of Science degree with a major in Physics. During my studies, I also learned programming languages like Python, C++, and MATLAB, which gave me programming skills. My education in physics has provided me with a strong foundation in scientific principles, and my programming skills enable me to apply this knowledge in practical ways. This combination allows me to approach complex problems with both a scientific and computational mindset, making me well-prepared for various professional roles that require analytical thinking and technical expertise.",
+		"Thesis": "Web-Based Application to Classify Skin Cancer with Deep Learning",
+		"GPA": "3.8"
+	}
+]
