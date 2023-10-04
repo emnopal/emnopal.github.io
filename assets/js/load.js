@@ -167,8 +167,8 @@ async function renderEducation() {
 			if (ele.Thesis && ele.GPA) {
 				isUniv = `
 					<div style="padding-top: 10px;">
-						<h6>Thesis: ${ele.Thesis}</h6>
-						<h6>GPA: ${ele.GPA}</h6>
+						<h6>Thesis: ${ele.Thesis} (<a href="https://repository.uinjkt.ac.id/dspace/handle/123456789/63813" target="_blank" >Thesis Publication</a>, <a href="https://github.com/emnopal/skin-lesion-detection" >Thesis Repository</a>)</h6>
+						<h6>GPA: ${ele.GPA} (<a href="./assets/docs/Muhammad Naufal - ${ele.Degree} of ${ele.Major} Academic Report.pdf" target="_blank" >Academic Report</a>)</h6>
                     </div>
 				`
 			}
@@ -224,6 +224,43 @@ async function renderEducation() {
 	setTimeout(renderEducation, 5000);
 }
 
+async function renderHardSkills() {
+	try {
+		const response = await fetch("./assets/data/skills.json");
+		if (!response.ok) {
+			throw new Error(`Failed to fetch data: ${response.status}`);
+		}
+
+		const json = await response.json();
+
+		let data = "";
+
+		json.HardSkills.forEach(skill => {
+			data += `
+			<div class="col-lg-3 col-md-4 mt-4 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+				<div class="icon-box iconbox-blue text-center">
+					<div class="icon">
+						<img src="assets/img/skill-icon/${skill}.png" alt="" width="100px" height="100px" style="object-fit:scale-down;background-size: cover;">
+					</div>
+					<br/>
+					<h5>${skill}</h5>
+					<p></p>
+				</div>
+			</div>
+			`
+		})
+
+		let content = document.getElementById("skills-content");
+		content.innerHTML = `
+            <div class="row">
+                ${data}
+            </div>
+        `;
+	} catch (error) {
+		console.error("An error occurred:", error);
+	}
+}
+
 // render to html
 (async function () {
 	"use strict"; //preloader
@@ -231,5 +268,6 @@ async function renderEducation() {
 	renderSummary();
 	renderExperience();
 	renderEducation();
+	renderHardSkills();
 
 })();
