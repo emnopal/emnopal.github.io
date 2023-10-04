@@ -256,9 +256,55 @@ async function renderHardSkills() {
                 ${data}
             </div>
         `;
+
+		let countSkills = document.getElementById("count-skills");
+		countSkills.innerHTML = `${json.HardSkills.length}`;
+
 	} catch (error) {
 		console.error("An error occurred:", error);
 	}
+}
+
+async function renderCertificates() {
+	try {
+		const response = await fetch("./assets/data/certificates.json");
+		if (!response.ok) {
+			throw new Error(`Failed to fetch data: ${response.status}`);
+		}
+
+		const json = await response.json();
+
+		let data = "";
+		json.forEach((ele, num) => {
+			let borderBottomClass = num < 2
+				? "padding-bottom: 15px;"
+				: "padding-bottom: 15px; padding-top: 35px;"
+
+			let textAlignLoc = num % 2 == 0 ? "text-right" : "text-left"
+
+			data += `
+                <div class="column col-12 ${textAlignLoc}" style="${borderBottomClass}">
+                    <a href="${ele.certificationURL}" target="_blank"><h4>${ele.name}</h4></a>
+                    <span>Issued by: ${ele.whoIssue} (${ele.issuedAt})</span><br/>
+					<span>Certification No: ${ele.credentialsId}</span>
+                </div>
+            `;
+		});
+
+		let certificates = document.getElementById("certificates-content");
+		certificates.innerHTML = `
+            <div class="row">
+                ${data}
+            </div>
+        `;
+
+		let countCertificates = document.getElementById("count-certificates");
+		countCertificates.innerHTML = `${json.length}`;
+
+	} catch (error) {
+		console.error("An error occurred:", error);
+	}
+	setTimeout(renderExperience, 5000);
 }
 
 // render to html
@@ -269,5 +315,6 @@ async function renderHardSkills() {
 	renderExperience();
 	renderEducation();
 	renderHardSkills();
+	renderCertificates();
 
 })();

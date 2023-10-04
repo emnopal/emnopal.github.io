@@ -24,6 +24,8 @@
         "Scikit-Learn",
         "HTML",
         "CSS",
-        "Git"
+        "Git",
+        "Numpy",
+        "Pandas"
     ]
 }
