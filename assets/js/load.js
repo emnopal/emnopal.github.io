@@ -236,11 +236,15 @@ async function renderHardSkills() {
 		let data = "";
 
 		json.HardSkills.forEach(skill => {
+			let widthHeight = `width="100px" height="100px"`
+			if (skill === 'Cloud Computing') {
+				widthHeight = `width="300px" height="100px"`
+			}
 			data += `
 			<div class="col-lg-3 col-md-4 mt-4 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
 				<div class="icon-box iconbox-blue text-center">
 					<div class="icon">
-						<img src="assets/img/skill-icon/${skill}.png" alt="" width="100px" height="100px" style="object-fit:scale-down;background-size: cover;">
+						<img src="assets/img/skill-icon/${skill}.png" alt="" ${widthHeight} style="object-fit:scale-down;background-size: cover;">
 					</div>
 					<br/>
 					<h5>${skill}</h5>
