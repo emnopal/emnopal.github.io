@@ -233,32 +233,45 @@ async function renderHardSkills() {
 
 		const json = await response.json();
 
-		let data = "";
+		const HardSkills = json.HardSkills
 
-		json.HardSkills.forEach(skill => {
+		let data = '';
+		let skillCount = 0;
+
+		Object.keys(HardSkills).forEach((skillType) => {
 			data += `
-			<div class="col-lg-3 col-md-4 mt-4 d-flex justify-content-center align-items-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-				<div class="icon-box iconbox-blue text-center">
-					<div class="icon">
-						<img src="assets/img/skill-icon/${skill}.png" alt="" height="100px" style="object-fit:scale-down;background-size: cover;">
-					</div>
-					<br/>
-					<h5>${skill}</h5>
-					<p></p>
-				</div>
-			</div>
+				<span>
+					<h5 style="display: inline;">${skillType}</h5>
+					<span style="display: inline;"> (Count: ${HardSkills[skillType].length})</span>
+				</span>
 			`
+			HardSkills[skillType].forEach((skill) => {
+				data += `
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-4 d-flex justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+						<div class="icon-box iconbox-blue text-center">
+							<div class="icon">
+								<img src="assets/img/skill-icon/${skill}.png" alt="" height="60px" style="max-width: 100%; max-height: 100%;">
+							</div>
+							<br/>
+							<h5>${skill}</h5>
+							<p></p>
+						</div>
+					</div>
+				`
+				skillCount++
+			})
 		})
 
 		let content = document.getElementById("skills-content");
+
 		content.innerHTML = `
             <div class="row">
                 ${data}
             </div>
-        `;
+        `
 
 		let countSkills = document.getElementById("count-skills");
-		countSkills.innerHTML = `${json.HardSkills.length}`;
+		countSkills.innerHTML = `${skillCount}`
 
 	} catch (error) {
 		console.error("An error occurred:", error);

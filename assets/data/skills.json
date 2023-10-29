@@ -1,31 +1,36 @@
 {
-    "HardSkills": [
-        "Python",
-        "Django",
-        "Flask",
-        "Odoo",
-        "Javascript",
-        "NodeJS",
-        "ExpressJS",
-        "jQuery",
-        "PHP",
-        "Laravel",
-        "Go",
-        "MySQL",
-        "PostgreSQL",
-        "Linux",
-        "Docker",
-        "Cloud Computing",
-        "BigQuery",
-        "Firebase",
-        "Metabase",
-        "PowerBI",
-        "TensorFlow",
-        "Scikit-Learn",
-        "HTML",
-        "CSS",
-        "Git",
-        "Numpy",
-        "Pandas"
-    ]
+	"HardSkills": {
+		"Language": [
+			"Python",
+			"JavaScript",
+			"PHP",
+			"Laravel",
+			"Go"
+		],
+		"Backend Development": [
+			"Flask",
+			"ExpressJS"
+		],
+        "Fullstack Development": [
+            "Django",
+            "Odoo",
+            "Laravel"
+        ],
+		"Frontend Development": [
+			"HTML",
+            "CSS",
+			"jQuery",
+			"NextJS",
+			"ReactJS"
+		],
+		"Database": [
+			"MySQL",
+			"PostgreSQL"
+		],
+		"Tools": [
+			"TensorFlow",
+			"Linux",
+            "Containerization (Docker)"
+		]
+	}
 }
