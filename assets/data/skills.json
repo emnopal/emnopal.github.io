@@ -30,7 +30,7 @@
 		"Tools": [
 			"TensorFlow",
 			"Linux",
-            "Containerization (Docker)"
+            "Docker"
 		]
 	}
 }
