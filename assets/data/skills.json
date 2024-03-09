@@ -3,13 +3,16 @@
 		"Language": [
 			"Python",
 			"JavaScript",
+			"TypeScript",
 			"PHP",
 			"Laravel",
 			"Go"
 		],
 		"Backend Development": [
 			"Flask",
-			"ExpressJS"
+			"ExpressJS",
+			"NestJS",
+			"FastAPI"
 		],
         "Fullstack Development": [
             "Django",
@@ -25,7 +28,8 @@
 		],
 		"Database": [
 			"MySQL",
-			"PostgreSQL"
+			"PostgreSQL",
+			"Elasticsearch"
 		],
 		"Tools": [
 			"TensorFlow",

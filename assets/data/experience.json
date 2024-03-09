@@ -1,5 +1,20 @@
 [
     {
+        "Title": "Full stack Developer",
+        "ExperienceType": "Full-Time",
+        "CompanyName": "PT. Protergo Siber Sekurity",
+        "CompanyWebsiteName": "https://protergo.id",
+        "CompanyLogo": null,
+        "CompanyLocation": "Pesanggrahan, South Jakarta, Indonesia",
+        "Date": {
+            "Start": "2023-10-31",
+            "End": null
+        },
+        "Description": "&#x2022 Maintain Django and PostgreSQL full-stack stack<br/>&#x2022 Build and maintain REST API using Flask and Elasticsearch stack<br/>&#x2022 Build and maintain Next.js for Flask and Elasticsearch backend<br/>&#x2022 Integrating REST API to SOAR (Security Orchestration, Automation and Response) and SIEM (Security Information and Event Management)<br/>&#x2022 Implement Docker for development and deployment",
+        "Skills": "NextJS,Linux,Django,Elasticsearch,jQuery,ReactJS,Flask,PostgreSQL",
+        "Links": []
+    },
+    {
         "Title": "Software Engineer",
         "ExperienceType": "Full-Time",
         "CompanyName": "PT. BMG (Boston Makmur Gemilang) Indonesia",
@@ -8,7 +23,7 @@
         "CompanyLocation": "Kebon Jeruk, West Jakarta, Indonesia",
         "Date": {
             "Start": "2022-02-04",
-            "End": null
+            "End": "2023-10-31"
         },
         "Description": "&#x2022 Build scalable and maintainable applications and services (Odoo and some Backend services)<br/>&#x2022 Maintain and Optimizing existing applications and services (Odoo and some Backend Services)<br/>&#x2022 Maintain and Optimizing SQL queries for applications and services (Odoo Dashboard and Report also some Backend Services as well for some dashboarding apps such as Metabase and PowerBI)<br/>&#x2022 Implement Docker as the container for deployment<br/>&#x2022 Implement a Cloud Platform for deployment<br/>&#x2022 Collaborate with QA and Functional team to deliver features and improvements<br/>&#x2022 Collaborate with the Overseas team",
         "Skills": "Data Visualization,Google BigQuery,Docker,Azure,Odoo,Python,Data Analysis,Data Engineering,PostgreSQL,Flask,Django",

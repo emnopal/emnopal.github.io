@@ -167,7 +167,7 @@ async function renderEducation() {
 			if (ele.Thesis && ele.GPA) {
 				isUniv = `
 					<div style="padding-top: 10px;">
-						<h6>Thesis: ${ele.Thesis} (<a href="https://repository.uinjkt.ac.id/dspace/handle/123456789/63813" target="_blank" >Thesis Publication</a>, <a href="https://github.com/emnopal/skin-lesion-detection" >Thesis Repository</a>)</h6>
+						<h6>Thesis: ${ele.Thesis} (<a href="https://repository.uinjkt.ac.id/dspace/handle/123456789/63813" target="_blank" >Thesis Publication Repository</a>, <a href="https://github.com/emnopal/skin-lesion-detection" >Thesis Repository</a>, <a href="./assets/docs/Muhammad Naufal - Thesis (Indonesia).pdf" >Thesis Publication</a>)</h6>
 						<h6>GPA: ${ele.GPA} (<a href="./assets/docs/Muhammad Naufal - ${ele.Degree} of ${ele.Major} Academic Report.pdf" target="_blank" >Academic Report</a>)</h6>
                     </div>
 				`
