@@ -2,24 +2,24 @@
 	"HardSkills": {
 		"Language": [
 			"Python",
-			"JavaScript",
+			"Javascript",
 			"TypeScript",
 			"PHP",
-			"Laravel",
 			"Go"
 		],
-		"Backend Development": [
+		"Backend Framework": [
 			"Flask",
 			"ExpressJS",
 			"NestJS",
 			"FastAPI"
 		],
-        "Fullstack Development": [
+        "Fullstack Framework": [
             "Django",
             "Odoo",
-            "Laravel"
+            "Laravel",
+			"CodeIgniter"
         ],
-		"Frontend Development": [
+		"Frontend Framework": [
 			"HTML",
             "CSS",
 			"jQuery",
@@ -32,9 +32,22 @@
 			"Elasticsearch"
 		],
 		"Tools": [
-			"TensorFlow",
 			"Linux",
-            "Docker"
-		]
+            "Docker",
+			"Kibana"
+		],
+		"Other Skills (not bound to framework or language)": [
+			"Machine Learning",
+			"Data Engineering",
+			"Scraping",
+			"Automation"
+		],
+		"_comment": {
+			"_deleted": {
+				"Tools": [
+					"TensorFlow"
+				]
+			}
+		}
 	}
 }
