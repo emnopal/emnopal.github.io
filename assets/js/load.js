@@ -239,29 +239,27 @@ async function renderHardSkills() {
 		let skillCount = 0;
 
 		Object.keys(HardSkills).forEach((skillType) => {
-			if(skillType !== '_comment') {
+			data += `
+				<span>
+					<h5 style="display: inline;">${skillType}</h5>
+					<span style="display: inline;"> (Count: ${HardSkills[skillType].length})</span>
+				</span>
+			`
+			HardSkills[skillType].forEach((skill) => {
 				data += `
-					<span>
-						<h5 style="display: inline;">${skillType}</h5>
-						<span style="display: inline;"> (Count: ${HardSkills[skillType].length})</span>
-					</span>
-				`
-				HardSkills[skillType].forEach((skill) => {
-					data += `
-						<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-4 d-flex justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-							<div class="icon-box iconbox-blue text-center">
-								<div class="icon">
-									<img src="assets/img/skill-icon/${skill}.png" alt="" height="60px" style="max-width: 100%; max-height: 100%;">
-								</div>
-								<br/>
-								<h5>${skill}</h5>
-								<p></p>
+					<div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-4 d-flex justify-content-center aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+						<div class="icon-box iconbox-blue text-center">
+							<div class="icon">
+								<img src="assets/img/skill-icon/${skill}.png" alt="" height="60px" style="max-width: 100%; max-height: 100%;">
 							</div>
+							<br/>
+							<h5>${skill}</h5>
+							<p></p>
 						</div>
-					`
-					skillCount++
-				})
-			}
+					</div>
+				`
+				skillCount++
+			})
 		})
 
 		let content = document.getElementById("skills-content");

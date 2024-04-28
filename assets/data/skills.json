@@ -41,13 +41,6 @@
 			"Data Engineering",
 			"Scraping",
 			"Automation"
-		],
-		"_comment": {
-			"_deleted": {
-				"Tools": [
-					"TensorFlow"
-				]
-			}
-		}
+		]
 	}
 }
