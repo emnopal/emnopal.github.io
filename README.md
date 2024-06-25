@@ -4,7 +4,7 @@ This website contains portfolio
 
 # URL
 
-[emnopal.github.io](https://emnopal.github.io)
+[https://emnopal.me/](https://emnopal.me/)
 
 # Stack
 HTML, CSS, JS (jQuery), Bootstrap
