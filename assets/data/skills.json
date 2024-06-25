@@ -19,7 +19,7 @@
             "Laravel",
 			"CodeIgniter"
         ],
-		"Frontend Framework": [
+		"Frontend Library and Framework": [
 			"HTML",
             "CSS",
 			"jQuery",
@@ -33,6 +33,7 @@
 		],
 		"Tools": [
 			"Linux",
+			"Bash Scripting",
             "Docker",
 			"Kibana"
 		],
